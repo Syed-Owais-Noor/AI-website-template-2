@@ -1,0 +1,361 @@
+footer{
+    background: #03101c;
+    max-width: 100%;
+    height: auto;
+}
+
+footer #back-to-top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #aa14cc;
+    color: #fff;
+    text-align: center;
+    transition: .5s;
+}
+
+footer #back-to-top:hover {
+    background-color: #fff;
+    color: #aa14cc;
+}
+
+footer .contact-us{
+    float: left;
+    padding: 10vh 10vw;
+}
+
+footer .contact-us #contact-us-logo{
+    max-width: 100%;
+    height: 20vh;
+}
+
+footer .contact-us #contact-us-h2{
+    padding-bottom: 5vh;
+}
+
+footer .contact-us .contact-us-list ul li a{
+    text-decoration: none;
+}
+
+footer .contact-us .contact-us-list ul li{
+    list-style: none;
+    padding: 2vh 0vw;
+}
+
+footer .contact-us .contact-us-list ul #social{
+    color: #fff;
+    float: left;
+    margin-right: 5vw;
+    cursor: pointer;
+}
+
+footer .contact-us .contact-us-list ul #social:hover{
+    color: #aa14cc;
+    transition: all .5s;
+}
+
+footer .contact-us-form{
+    padding: 5vh 10vw;
+    margin-left: 80vh;
+}
+
+footer .contact-us-form #contact-us-form-h3{
+    padding-bottom: 2vh;
+}
+
+footer .contact-us-form #form{
+    background: #020b13;
+    max-width: 100%;
+    height: 70vh;
+    border-radius: 2.5%;
+    padding: 0vh 5vw;
+    padding-top: 10vh;
+}
+
+footer .contact-us-form #inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 1.5vh;
+}
+
+footer .contact-us-form #inputBox input,
+footer .contact-us-form #inputBox textarea{
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    padding: 3vh 0vw;
+    font-size: 2vh;
+    margin: 2vh 0vw;
+    border: none;
+    border-bottom: .5vh solid #03101c;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+footer .contact-us-form #inputBox label{
+    position: absolute;
+    left: 0;
+    padding: .5vh 0vw;
+    font-size: 2vh;
+    margin: 2vh 0vw;
+    pointer-events: none;
+    transition: .5s;
+}
+
+footer .contact-us-form #inputBox input:focus ~ label,
+footer .contact-us-form #inputBox input:valid ~ label,
+footer .contact-us-form #inputBox textarea:focus ~ label,
+footer .contact-us-form #inputBox textarea:valid ~ label{
+    color: #e91e63;
+    font-size: 1.8vh;
+    transform: translateY(-20px);
+}
+
+footer .contact-us-form #the-count {
+    float: right;
+    font-size: 2vh;
+}
+
+footer .contact-us-form .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #aa14cc;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 2vh;
+    padding: 2vh;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 5vh;
+  }
+
+footer .contact-us-form .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+footer .contact-us-form .button span:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f1d8';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+footer .contact-us-form .button:hover span {
+    padding-right: 25px;
+}
+  
+footer .contact-us-form .button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*-- Media Query --*/
+
+/*-- Laptop L --*/
+
+@media (max-width: 1440px) {
+     
+}
+
+@media (max-width: 665px) {
+    footer{
+        height: 170vh !important;
+    }
+
+    footer .contact-us{
+        float: none !important;
+        padding: 10vh 12vw !important;
+    }
+    
+    footer .contact-us-form{
+        margin-left: 0vh !important;
+    }
+}
+
+/*-- Laptop --*/
+
+@media (max-width: 1024px) {
+    footer .contact-us-form{
+        margin-left: 50vh;
+    }    
+}
+
+@media (max-width: 599px) {
+    footer{
+        height: 170vh !important;
+    }
+
+    footer .contact-us{
+        float: none !important;
+        padding: 10vh 12vw !important;
+    }
+    
+    footer .contact-us-form{
+        margin-left: 0vh !important;
+    }
+}
+
+/*-- Tablet --*/
+
+@media (max-width: 768px) {
+    footer .contact-us-form{
+        margin-left: 50vh;
+    }
+}
+
+/*-- L Mobile --*/
+
+@media (max-width: 425px) {
+    footer #back-to-top {
+        width: 30px !important;
+        line-height: 30px !important;
+    }
+    
+    footer{
+        height: 170vh !important;
+    }
+
+    footer .contact-us{
+        float: none !important;
+        padding: 10vh 12vw !important;
+    }
+    
+    footer .contact-us-form{
+        margin-left: 0vh !important;
+    }
+
+    footer .contact-us-form #inputBox label{
+        font-size: 1.5vh !important;
+    }
+}
+
+@media (max-height: 425px) {
+    footer{
+        height: 180vh !important;
+    }
+
+    footer .contact-us{
+        float: none !important;
+        padding: 10vh 12vw !important;
+    }
+    
+    footer .contact-us-form{
+        margin-left: 0vh !important;
+    }
+
+    footer .contact-us-form #form{
+        height: 75vh !important;
+    }
+
+    footer .contact-us-form #form label{
+        font-size: 1.5vw !important;
+    }
+
+    footer .contact-us-form #form .button{
+        font-size: 1.5vw !important;
+    }
+}
+
+/*-- M Mobile --*/
+
+@media (max-width: 375px) {
+    footer{
+        height: 160vh !important;
+    }
+
+    footer .contact-us{
+        float: none !important;
+        padding: 10vh 12vw !important;
+    }
+    
+    footer .contact-us-form{
+        margin-left: 0vh !important;
+    }
+}
+
+@media (max-height: 375px) {
+    footer{
+        height: 180vh !important;
+    }
+
+    footer .contact-us{
+        float: none;
+        padding: 10vh 12vw !important;
+    }
+    
+    footer .contact-us-form{
+        margin-left: 0vh !important;
+    }
+
+    footer .contact-us-form #form{
+        height: 75vh !important;
+    }
+
+    footer .contact-us-form #form label{
+        font-size: 1.5vw !important;
+    }
+
+    footer .contact-us-form #form .button{
+        font-size: 1.5vw !important;
+    }
+}
+
+/*-- S Mobile --*/
+
+@media (max-width: 320px) {
+    footer #back-to-top {
+        width: 25px !important;
+        line-height: 25px !important;
+    }
+ 
+    footer{
+        height: 160vh !important;
+    }
+
+    footer .contact-us{
+        float: none !important;
+        padding: 10vh 12vw !important;
+    }
+    
+    footer .contact-us-form{
+        margin-left: 0vh !important;
+    }   
+}
+
+@media (max-height: 320px) {
+    footer{
+        height: 180vh !important;
+    }
+
+    footer .contact-us{
+        float: none !important;
+        padding: 10vh 12vw !important;
+    }
+    
+    footer .contact-us-form{
+        margin-left: 0vh !important;
+    }
+
+    footer .contact-us-form #form{
+        height: 75vh !important;
+    }
+
+    footer .contact-us-form #form .button{
+        font-size: 1.5vw !important;
+    }
+}

@@ -1,0 +1,256 @@
+*{
+    margin: 0vmax;
+    padding: 0vmax;
+}
+
+body{
+    font-size: 1.2vw;
+    font-family: 'Fira Code', 'Source Code Pro', monospace;
+    color: #fff;
+}
+
+.particles-js{
+    background: #03101c;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.login{
+    background: #020b13;
+    width: 25vw;
+    height: 50vh;
+    margin: -85vh 34vw;
+    padding: 10vh;
+    border-radius: 1.5%;
+}
+
+.login #form-h3{
+    font-size: 4vh;
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
+.login #inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 1.5vh;
+}
+
+.login #inputBox input,
+.login #inputBox textarea{
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    padding: 3vh 0vw;
+    font-size: 2vh;
+    margin: 2vh 0vw;
+    border: none;
+    border-bottom: .5vh solid #03101c;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+.login #inputBox label{
+    position: absolute;
+    left: 0;
+    padding: .5vh 0vw;
+    font-size: 2vh;
+    margin: 2vh 0vw;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login #inputBox input:focus ~ label,
+.login #inputBox input:valid ~ label,
+.login #inputBox textarea:focus ~ label,
+.login #inputBox textarea:valid ~ label{
+    color: #e91e63;
+    font-size: 1.8vh;
+    transform: translateY(-20px);
+}
+
+.login .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #aa14cc;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 2vh;
+    padding: 2vh;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 5vh;
+}
+
+.login .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.login .button span:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f007';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.login .button:hover span {
+    padding-right: 25px;
+}
+  
+.login .button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*-- Media Query --*/
+
+/*-- Laptop L --*/
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 665px) {
+    .login{
+        margin: -85vh 28vw !important;
+    }
+    
+    .login #form-h3{
+        font-size: 3vh !important;
+    }
+}
+
+/*-- Laptop --*/
+
+@media (max-width: 1024px) {
+    .login{
+        margin: -85vh 32vw !important;
+    }
+
+    .login #form-h3{
+        font-size: 3.5vh !important;
+    }
+}
+
+@media (max-width: 599px) {
+    .login{
+        margin: -85vh 28vw !important;
+    }
+    
+    .login #form-h3{
+        font-size: 3vh !important;
+    }
+}
+
+/*-- Tablet --*/
+
+@media (max-width: 768px) {
+    .login{
+        margin: -85vh 30vw !important;
+    }
+    
+    .login #form-h3{
+        font-size: 3vh !important;
+    }
+}
+
+/*-- L Mobile --*/
+
+@media (max-width: 425px) {
+    .login{
+        width: 30vw !important;
+        margin: -85vh 22vw !important;
+    }
+    
+    .login #form-h3{
+        font-size: 2.5vh !important;
+    }
+}
+
+@media (max-height: 425px) {
+    .login{
+        width: 30vw !important;
+        margin: -85vh 30vw !important;
+    }
+    
+    .login #form-h3{
+        font-size: 3.5vh !important;
+    }
+
+    .login label{
+        font-size: 2.5vh !important;
+    }
+
+    .login .button{
+        font-size: 3vh !important;
+    }
+}
+
+/*-- M Mobile --*/
+
+@media (max-width: 375px) {
+    .login{
+        margin: -85vh 20.5vw !important;
+    }
+    
+    .login #form-h3{
+        font-size: 3vh !important;
+    }
+}
+
+@media (max-height: 375px) {
+    .login{
+        margin: -85vh 28vw !important;
+    }
+    
+    .login #form-h3{
+        font-size: 3.5vh !important;
+    }
+
+    .login label{
+        font-size: 2.5vh !important;
+    }
+
+    .login .button{
+        font-size: 3vh !important;
+    }
+}
+
+/*-- S Mobile --*/
+
+@media (max-width: 320px) {
+    .login{
+        margin: -85vh 18vw !important;
+    }
+    
+    .login #form-h3{
+        font-size: 2.5vh !important;
+    }
+}
+
+@media (max-height: 320px) {
+    .login{
+        margin: -85vh 31vw !important;
+    }
+    
+    .login #form-h3{
+        font-size: 3.5vh !important;
+    }
+
+    .login label{
+        font-size: 2.5vh !important;
+    }
+
+    .login .button{
+        font-size: 3vh !important;
+    }
+}

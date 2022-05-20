@@ -1,0 +1,608 @@
+.particles-js{
+    background: #03101c;
+    max-width: 100%;
+    height: 90vh;
+}
+
+.call-of-companies{
+    margin-top: -50vh;
+    margin-left: 20vw;
+    text-align: left;
+}
+
+.call-of-companies #call-of-companies-h1{
+    font-size: 5vh;
+}
+
+.call-of-companies #call-of-companies-h3{
+    font-size: 2.5vh;
+    padding: 6vh 0vw;
+}
+
+.company{
+    background: #020b13;
+    margin-top: 28vh;
+    max-width: 100%;
+    height: 120vh;
+}
+
+.company #company{
+    margin: 0vh 15vw;
+}
+
+.company #company-h2{
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.company #company-p{
+    text-align: justify;
+}
+
+.company-carousel {
+    background: #020b13;
+}
+
+.company-carousel-cell {
+    width: 16vw;
+    height: 32vh;
+    margin: 5vh 1vw;
+    border-radius: 1.2vh;
+}
+
+.robots{
+    background: #03101c;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.robots #robots{
+    margin: 0vh 15vw;
+}
+
+.robots #robots #robots-h2{
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    font-size: 5vh;
+    text-align: center;
+}
+
+.robots #robots #robots-p{
+    text-align: justify;
+}
+
+.robots-carousel {
+    background: #03101c;
+}
+
+.robots-carousel .robots-carousel-cell {
+    width: 16vw;
+    height: 32vh;
+    margin: 5vh 1vw;
+    border-radius: 1.2vh;
+}
+
+.robots-carousel #robot-image{
+    background: #03101c;
+    /* border: none; */
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.robots-carousel #robot-image .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(2, 11, 19);
+    background: rgba(2, 11, 19, 0.5); /* Black see-through */
+    color: #fff;
+    width: 28vh;
+    transition: .5s ease;
+    opacity:0;
+    color: #fff;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 0vh 0vh 1.2vh 1.2vh;
+    left: 1.6vh;
+    transform: translateY(-5.5vh);
+  }
+  
+/* When you mouse over the container, fade in the overlay title */
+.robots-carousel #robot-image:hover .overlay {
+    opacity: 1;
+}
+
+.about-us{
+    background: #020b13;
+    max-width: 100%;
+    height: 65vh;
+}
+
+.about-us #about-us{
+    padding: 0vh 10vw;
+    padding-right: 50vw;
+}
+
+.about-us #about-us-h2{
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    font-size: 5vh;
+}
+
+.about-us #about-us-p{
+    text-align: justify;
+}
+
+.about-us #image{
+    max-width: 100%;
+    height: 40vh;
+    transform: translateY(-32vh);
+    margin-left: 65vw;
+}
+
+/*-- Media Query --*/
+
+/*-- Laptop L --*/
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 665px) {
+    .company{
+        margin-top: 30vh !important;
+    }
+    
+    .call-of-companies #call-of-companies-h1{
+        font-size: 4vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 1.9vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 4vh !important;
+    }
+
+    .company-carousel-cell {
+        width: 30vw !important;
+        height: 28vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 4vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 30vw !important;
+        height: 28vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 4vh !important;
+    }
+
+    .about-us #image{
+        height: 30vh !important;
+        transform: translateY(-34vh) !important;
+    }
+}
+
+/*-- Laptop --*/
+
+@media (max-width: 1024px) {
+    .company{
+        margin-top: 29vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h1{
+        font-size: 4.5vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 2.2vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 4.5vh !important;
+    }
+    
+    .company-carousel-cell {
+        width: 18vw !important;
+        height: 30vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 4.5vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 18vw !important;
+        height: 30vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 4.5vh !important;
+    }
+
+    .about-us #image{
+        height: 35vh !important;
+        transform: translateY(-26vh) !important;
+    }
+}
+
+@media (max-width: 599px) {
+    .company{
+        margin-top: 30vh !important;
+    }
+    
+    .call-of-companies #call-of-companies-h1{
+        font-size: 4vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 1.9vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 4vh !important;
+    }
+
+    .company-carousel-cell {
+        width: 30vw !important;
+        height: 28vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 4vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 30vw !important;
+        height: 28vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 4vh !important;
+    }
+
+    .about-us #image{
+        height: 30vh !important;
+        transform: translateY(-34vh) !important;
+    }
+}
+
+/*-- Tablet --*/
+
+@media (max-width: 768px) {
+    .company{
+        margin-top: 30vh !important;
+    }
+    
+    .call-of-companies #call-of-companies-h1{
+        font-size: 4vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 1.9vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 4vh !important;
+    }
+
+    .company-carousel-cell {
+        width: 20vw !important;
+        height: 28vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 4vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 20vw !important;
+        height: 28vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 4vh !important;
+    }
+
+    .about-us #image{
+        height: 30vh !important;
+        transform: translateY(-34vh) !important;
+    }
+}
+
+/*-- L Mobile --*/
+
+@media (max-width: 425px) {
+    .company{
+        margin-top: 31vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h1{
+        font-size: 3.5vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 1.6vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 3.5vh !important;
+    }
+
+    .company-carousel-cell {
+        width: 28vw !important;
+        height: 20vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 3.5vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 28vw !important;
+        height: 20vh !important;
+    }
+
+    .about-us{
+        height: 80vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 3.5vh !important;
+    }
+
+    .about-us #image{
+        height: 25vh !important;
+        transform: translateY(-43vh) !important;
+        margin-left: 60vw !important;
+    }
+}
+
+@media (max-height: 425px) {
+    .company{
+        margin-top: 28vh !important;
+        height: 130vh !important;
+    }
+
+    .robots{
+        height: 110vh !important;
+    }
+
+    .about-us{
+        height: 75vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h1{
+        font-size: 5vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 2.6vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 5vh !important;
+    }
+
+    .company-carousel-cell {
+        width: 28vw !important;
+        height: 30vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 5vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 28vw !important;
+        height: 30vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 5vh !important;
+    }
+
+    .about-us #image{
+        height: 40vh !important;
+        transform: translateY(-43vh) !important;
+        margin-left: 60vw !important;
+    }
+}
+
+/*-- M Mobile --*/
+
+@media (max-width: 375px) {
+    .company{
+        margin-top: 32vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h1{
+        font-size: 3vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 1.6vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 3vh !important;
+    }
+
+    .company-carousel-cell {
+        width: 30vw !important;
+        height: 18vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 3vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 30vw !important;
+        height: 18vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 3vh !important;
+    }
+
+    .about-us #image{
+        margin-left: 55vw !important;
+        transform: translateY(-39vh) !important;
+    }
+}
+
+@media (max-height: 375px) {
+    .company{
+        margin-top: 27vh !important;
+        height: 140vh !important;
+    }
+
+    .robots{
+        height: 120vh !important;
+    }
+
+    .about-us{
+        height: 85vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h1{
+        font-size: 5.5vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 3vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 5.5vh !important;
+    }
+
+    .company-carousel-cell {
+        width: 26vw !important;
+        height: 32vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 5.5vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 26vw !important;
+        height: 32vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 5.5vh !important;
+    }
+
+    .about-us #image{
+        height: 40vh !important;
+        transform: translateY(-46vh) !important;
+        margin-left: 60vw !important;
+    }
+}
+
+/*-- S Mobile --*/
+
+@media (max-width: 320px) {
+    .call-of-companies{
+        margin-left: 16vw !important;
+    }
+
+    .company{
+        margin-top: 32vh!important;
+    }
+
+    .call-of-companies #call-of-companies-h1{
+        font-size: 3vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 1.45vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 2.5vh !important;
+    }
+
+    .company-carousel-cell {
+        width: 32vw !important;
+        height: 16vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 2.5vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 32vw !important;
+        height: 16vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 2.5vh !important;
+    }
+
+    .about-us #image{
+        height: 20vh !important;
+        transform: translateY(-34vh) !important;
+    }
+}
+
+@media (max-height: 320px) {
+    .company{
+        margin-top: 26vh !important;
+        height: 140vh !important;
+    }
+
+    .robots{
+        height: 120vh !important;
+    }
+
+    .about-us{
+        height: 85vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h1{
+        font-size: 5.5vh !important;
+    }
+
+    .call-of-companies #call-of-companies-h3{
+        font-size: 3vh !important;
+    }
+
+    .company  #company-h2{
+        font-size: 5.5vh !important;
+    }
+
+    .company-carousel-cell {
+        width: 26vw !important;
+        height: 32vh !important;
+    }
+
+    .robots  #robots-h2{
+        font-size: 5.5vh !important;
+    }
+
+    .robots-carousel-cell {
+        width: 26vw !important;
+        height: 32vh !important;
+    }
+
+    .about-us #about-us-h2{
+        font-size: 5.5vh !important;
+    }
+
+    .about-us #image{
+        height: 40vh !important;
+        transform: translateY(-46vh) !important;
+        margin-left: 60vw !important;
+    }
+}
