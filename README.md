@@ -1,5 +1,5 @@
 # AI-template-Website
 
-##Note
+## Note
 
 Download font-awesome and extract it in this folder 
