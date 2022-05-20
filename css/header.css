@@ -1,0 +1,327 @@
+*{
+    margin: 0vmax;
+    padding: 0vmax;
+}
+
+body{
+    font-size: 1.2vw;
+    font-family: 'Fira Code', 'Source Code Pro', monospace;
+    color: #fff;
+}
+
+header{
+    background: #03101c;
+    max-width: 100%;
+    height: 7vh;
+    position: fixed;
+    display: flex;
+    box-shadow: .1px .2vw #020b13;
+}
+
+header .nav-logo{
+    float: left;
+    padding: 0vh 5vw;
+}
+
+header .nav-logo #logo{
+    max-width: 100%;
+    height: 25vh;
+    display: flex;
+}
+
+header .nav-list{
+    padding-left: 55vw;
+}
+
+header .nav-list ul li{
+    list-style: none;
+    float: left;
+    line-height: 7.5vh;
+    padding: 0vh 2.5vw;
+}
+
+header .nav-list ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .nav-list ul li a:hover{
+    color: #aa14cc;
+    transition: 0.5s;
+    border-bottom: 2.5px solid #fff;
+    padding-bottom: .5vh;
+}
+
+header .nav-list #icon{
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+/*-- Media Query --*/
+
+/*-- Laptop L --*/
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 665px) {
+    body{
+        font-size: 2.2vw !important;
+    }
+
+    header{
+        height: 6vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 21vh !important;
+    }
+    
+    header ul{
+        position: fixed !important;
+        background: #03101c !important;
+        width: 28vw !important;
+        height: 28vh !important;
+        text-align: center !important;
+        top: 6vh !important;
+        left: 100% !important;
+        transition: all .5s !important;
+        box-shadow: -2.5px .5vw #020b13 !important;
+    }
+
+    header .nav-list ul li{
+        float: none !important;
+        line-height: 6vh !important;
+        padding: 0vh 0vw !important;
+    }
+
+    header .nav-list #icon{
+        display: block !important;
+        padding: 2vh 35vw !important;
+    }
+
+    header ul.show{
+        left: 75vw !important;
+    }
+}
+
+/*-- Laptop --*/
+
+@media (max-width: 1024px) {
+    header .nav-logo #logo{
+        height: 25vh !important;
+    } 
+}
+
+@media (max-width: 599px) {
+    body{
+        font-size: 2vw !important;
+    }
+    
+    header{
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+
+    header .nav-logo #logo{
+        height: 24vh !important;
+    }
+
+    header .nav-list #icon{
+        padding: 2vh 35vw !important;
+    }
+}
+
+/*-- Tablet --*/
+
+@media (max-width: 768px) {
+    body{
+        font-size: 1.8vw !important;
+    }
+
+    header{
+        height: 6vh !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 24vh !important;
+    }
+    
+    header ul{
+        position: fixed !important;
+        background: #03101c !important;
+        width: 30vw !important;
+        height: 30vh !important;
+        text-align: center !important;
+        top: 6vh !important;
+        left: 100% !important;
+        transition: all .5s !important;
+        box-shadow: -2.5px .5vw #020b13 !important;
+    }
+
+    header .nav-list ul li{
+        float: none !important;
+        line-height: 6vh !important;
+        padding: 0vh 0vw !important;
+    }
+
+    header .nav-list #icon{
+        display: block !important;
+        padding: 1.6vh 35vw !important;
+    }
+
+    header ul.show{
+        left: 70vw !important;
+    }
+}
+
+/*-- L Mobile --*/
+
+@media (max-width: 425px) {
+    body{
+        font-size: 3vw !important;
+    }
+
+    header{
+        height: 5.5vh !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 19vh !important;
+    }
+    
+    header ul{
+        width: 40vw !important;
+        height: 30vh !important;
+        top: 5vh !important;
+    }
+
+    header .nav-list ul li{
+        line-height: 7vh !important;
+    }
+
+    header ul.show{
+        left: 60vw !important;
+    }
+
+    header .nav-list #icon{
+        padding: 1.5vh 35vw !important;
+    }
+}
+
+@media (max-height: 425px) {
+    header{
+        height: 8vh !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 30vh !important;
+    }
+    
+    header ul{
+        width: 40vw !important;
+        height: 40vh !important;
+        top: 8vh !important;
+    }
+
+    header .nav-list ul li{
+        float: none !important;
+        line-height: 8.5vh !important;
+        padding: 0vh 0vw !important;
+    }
+
+    header ul.show{
+        left: 60vw !important;
+    }
+
+    header .nav-list #icon{
+        padding: 2.5vh 35vw !important;
+    }
+}
+
+/*-- M Mobile --*/
+
+@media (max-width: 375px) {
+    header{
+        height: 5vh !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 20vh !important;
+    }
+
+    header ul{
+        width: 40vw !important;
+        height: 30vh !important;
+        top: 5vh !important;
+    }
+
+    header .nav-list ul li{
+        line-height: 7vh !important;
+    }
+
+    header ul.show{
+        left: 60vw !important;
+    }
+
+    header .nav-list #icon{
+        padding: 1.5vh 35vw !important;
+    }
+}
+
+@media (max-height: 375px) {
+    header .nav-logo #logo{
+        height: 32vh !important;
+    }
+}
+
+/*-- M Mobile --*/
+
+@media (max-width: 320px) {
+    header{
+        height: 4.5vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 20vh !important;
+    }
+
+    header ul{
+        top: 4vh !important;
+    }
+
+    header .nav-list #icon{
+        padding: 1.5vh 35vw !important;
+    }
+}
+
+@media (max-height: 320px) {
+    header{
+        height: 10vh !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 40vh !important;
+    }
+    
+    header ul{
+        width: 40vw !important;
+        height: 40vh !important;
+        top: 9vh !important;
+    }
+
+    header .nav-list ul li{
+        line-height: 9vh !important;
+    }
+
+    header ul.show{
+        left: 60vw !important;
+    }
+
+    header .nav-list #icon{
+        padding: 3vh 35vw !important;
+    }
+}

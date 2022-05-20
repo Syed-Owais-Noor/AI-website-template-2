@@ -1,0 +1,321 @@
+*{
+    margin: 0vmax;
+    padding: 0vmax;
+}
+
+body{
+    font-size: 1.2vw;
+    font-family: 'Fira Code', 'Source Code Pro', monospace;
+    color: #020b13;
+}
+
+header{
+    background: #03101c;
+    width: 100%;
+    height: 7vh;
+    position: fixed;
+    display: flex;
+    box-shadow: .1px .2vw #020b13;
+}
+
+header .nav-logo{
+    float: left;
+    padding: 0vh 5vw;
+}
+
+header .nav-logo #logo{
+    max-width: 100%;
+    height: 25vh;
+    display: flex;
+}
+
+header .nav-list{
+    padding-left: 90vw;
+}
+
+header .nav-list ul li{
+    list-style: none;
+    float: left;
+    line-height: 7.5vh;
+    padding: 0vh .5vw;
+}
+
+header .nav-list ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .nav-list ul li a:hover{
+    color: #aa14cc;
+    transition: 0.5s;
+    border-bottom: 2.5px solid #fff;
+    padding-bottom: .5vh;
+}
+
+header .nav-list #icon{
+    color: #fff;
+    display: block;
+    cursor: pointer;
+}
+
+#particles-js{
+    background: #030e19;
+    max-width: 100%;
+    height: 120vh;
+}
+
+.table{
+    background: #fff;
+    max-width: 80vw;
+    height: 80vh;
+    margin: -95vh 10vw;
+    padding: 5vh 2.5vw;
+}
+
+.table #table-h2{
+    margin-bottom: 5vh;
+}
+
+.table #table button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #aa14cc;
+    border: none;
+    color: #fff;
+    text-align: center;
+    padding: 2vh;
+    width: 100%;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.table #table button:hover{
+    background-color: #c82333;
+}
+
+/*-- Media Query --*/
+
+/*-- Laptop L --*/
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 665px) {
+    body{
+        font-size: 1.8vw !important;
+    }
+
+    header{
+        height: 6vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 21vh !important;
+    }
+
+    header .nav-list{
+        padding-left: 80vw !important;
+    }
+}
+
+/*-- Laptop --*/
+
+@media (max-width: 1024px) {
+    header .nav-logo #logo{
+        height: 23vh !important;
+    }
+    
+    header .nav-list ul li{
+        line-height: 8vh !important;
+    }
+}
+
+@media (max-width: 599px) {
+    body{
+        font-size: 1.8vw !important;
+    }
+
+    header{
+        height: 6vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 21vh !important;
+    }
+
+    header .nav-list{
+        padding-left: 80vw !important;
+    }
+}
+
+/*-- Tablet --*/
+
+@media (max-width: 768px) {
+    body{
+        font-size: 1.8vw !important;
+    }
+
+    header{
+        height: 6vh !important;
+        box-shadow: .1px .2vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 21vh !important;
+    }
+
+    header .nav-list{
+        padding-left: 80vw !important;
+    }
+
+    header .nav-list ul li{
+        line-height: 6.5vh !important;
+    }
+}
+
+/*-- L Mobile --*/
+
+@media (max-width: 425px) {
+    body{
+        font-size: 3vw !important;
+    }
+
+    header{
+        height: 5.5vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 19vh !important;
+    }
+    
+    header .nav-list ul li{
+        line-height: 6vh !important;
+    }
+}
+
+@media (max-height: 425px) {
+    header{
+        height: 8vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 30vh !important;
+    }
+    
+    header .nav-list ul li{
+        line-height: 8vh !important;
+    }
+
+    #particles-js{
+        height: 150vh !important;
+    }
+
+    .table{
+        background: #fff !important;
+        max-width: 80vw !important;
+        height: 105vh !important;
+        margin: -120vh 10vw !important;
+        padding: 5vh 2.5vw !important;
+    }
+}
+
+/*-- M Mobile --*/
+
+@media (max-width: 375px) {
+    body{
+        font-size: 3vw !important;
+    }
+
+    header{
+        height: 5.5vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 19vh !important;
+    }
+    
+    header .nav-list ul li{
+        line-height: 6vh !important;
+    }
+}
+
+@media (max-height: 375px) {
+    header{
+        height: 8vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 30vh !important;
+    }
+    
+    header .nav-list ul li{
+        line-height: 8vh !important;
+    }
+
+    #particles-js{
+        height: 180vh !important;
+    }
+
+    .table{
+        background: #fff !important;
+        max-width: 80vw !important;
+        height: 120vh !important;
+        margin: -150vh 10vw !important;
+        padding: 5vh 2.5vw !important;
+    }
+}
+
+/*-- S Mobile --*/
+
+@media (max-width: 320px) {
+    body{
+        font-size: 3vw !important;
+    }
+
+    header{
+        height: 5.5vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 19vh !important;
+    }
+    
+    header .nav-list ul li{
+        line-height: 6vh !important;
+    }
+}
+
+@media (max-height: 320px) {
+    header{
+        height: 8vh !important;
+        box-shadow: .1px .5vw #020b13 !important;
+    }
+    
+    header .nav-logo #logo{
+        height: 30vh !important;
+    }
+    
+    header .nav-list ul li{
+        line-height: 8.5vh !important;
+    }
+
+    #particles-js{
+        height: 200vh !important;
+    }
+
+    .table{
+        background: #fff !important;
+        max-width: 80vw !important;
+        height: 140vh !important;
+        margin: -170vh 10vw !important;
+        padding: 5vh 2.5vw !important;
+    }
+}
