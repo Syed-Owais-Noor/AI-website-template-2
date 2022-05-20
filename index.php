@@ -1,0 +1,9 @@
+<?php
+    include_once('Connection.php');
+    include_once('header.php');
+    include_once('call_of_companies.php');
+    include_once('company.php');
+    include_once('robot.php');
+    include_once('about_us.php');
+    include_once('./footer.php');
+?>
