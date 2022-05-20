@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+
+		<title> Login </title>
+
+		<script>
+
+		function check()
+		{
+
+		var myusername="airobo@gmail.com";
+		var mypassword="123";
+		var usern = document.getElementById("email").value;
+		var pass = document.getElementById("password").value;
+
+		if ( usern==myusername && pass == mypassword) 
+		{
+
+		self.location = "Home.html"; 
+		window.location = "Home.html";
+		}
+		else
+		{
+		alert ("Invalid name or password");
+
+		}
+		}
+
+		</script>
+		    
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<link rel="icon" type="jpg" href="images/logo.jpg">
+
+		</head>
+
+		<body>
+
+			<!------------------------------- Main ------------------------->
+
+			<div class="agileits-main"> 
+			
+				<div class="header-main">
+
+				<h3 id="topP"> WORLD OF <br> AI ROBOTS</h3>
+
+					<div class="header-bottom">
+
+						<div class="header-right w3agile">
+
+							<div class="header-left-bottom agileinfo">
+								
+		                        <form action="Home.html" method="post">
+		                            
+									<div class="icon1">
+
+										<input type="email" id="email" placeholder="Email@example.com">
+
+									</div>
+		                            
+									<div class="icon1">
+
+										<input type="password" id="password" placeholder="Password" />
+										
+									</div>
+						
+		                        <div class="bottom">
+
+		                         <input type="submit" value="Sign in" id="submit"onclick="check()"/>
+
+								</div>
+									
+							    </form>	
+
+							</div>
+
+						</div>
+
+					</div>
+			</div>
+
+			</div>	
+
+		</body>
+
+	</html>
